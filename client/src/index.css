@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+/* CENTER LAYOUT */
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN CARD */
+.card {
+  width: 340px;
+  padding: 28px;
+  border-radius: 14px;
+
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+}
+
+/* HEADINGS */
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* INPUTS */
+input {
+  padding: 12px;
+  border-radius: 10px;
+
+  border: 1px solid #2d3748;
+  background: #0f172a;
+  color: white;
+
+  outline: none;
+  transition: border 0.2s ease, transform 0.1s ease;
+}
+
+input:focus {
+  border-color: #3b82f6;
+}
+
+/* BUTTONS */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+
+  background: #3b82f6;
+  color: white;
+
+  cursor: pointer;
+  font-weight: 500;
+
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ERROR TEXT */
+p {
+  font-size: 13px;
+}
